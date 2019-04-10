@@ -20,21 +20,19 @@ body {
   margin: 0px !important;
 }
 
-/* line 12, src/sass/components/_base.scss */
-body :before {
-  content: "";
-  display: block;
+/* line 21, src/sass/components/_base.scss */
+body .bg {
   position: fixed;
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
+  left: 0;
+  top: 0;
+  background: url("/images/bg.jpg") no-repeat left bottom fixed;
   z-index: -10;
-  background: url("/images/bg.jpg") no-repeat left bottom;
   background-size: cover;
 }
 
-/* line 29, src/sass/components/_base.scss */
+/* line 36, src/sass/components/_base.scss */
 body h1 {
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
@@ -46,7 +44,7 @@ body h1 {
           margin-inline-end: 0px;
 }
 
-/* line 38, src/sass/components/_base.scss */
+/* line 45, src/sass/components/_base.scss */
 input,
 textarea,
 select,
