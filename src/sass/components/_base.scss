@@ -19,7 +19,7 @@ body {
     height: 100%;
     z-index: -10;
 
-    background: url(/images/bg.jpg) no-repeat left bottom fixed;
+    background: url("/images/bg.jpg") no-repeat left bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
