@@ -1,0 +1,24 @@
+{
+  "name": "blackholesite",
+  "version": "1.0.0",
+  "description": "black hole film microsite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/defenestrated/blackholesite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/defenestrated/blackholesite/issues"
+  },
+  "homepage": "https://github.com/defenestrated/blackholesite#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
