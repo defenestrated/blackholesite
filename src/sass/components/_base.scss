@@ -2,6 +2,15 @@
  * @section Base Styles
  */
 
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    // font-weight: bold;
+    border-bottom: 1px solid white;
+  }
+}
+
 html {
   height: 100%;
 }
