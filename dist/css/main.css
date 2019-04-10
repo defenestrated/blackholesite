@@ -1,0 +1,166 @@
+/*!
+ * project-name v0.0.1
+ * A description for your project.
+ * (c) 2019 YOUR NAME
+ * MIT License
+ * http://link-to-your-git-repo.com
+ */
+
+/**
+ * @section Base Styles
+ */
+@import url("https://use.typekit.net/pak6xxi.css");
+/* line 5, src/sass/components/_base.scss */
+html {
+  height: 100%;
+}
+
+/* line 8, src/sass/components/_base.scss */
+body {
+  margin: 0px !important;
+}
+
+/* line 12, src/sass/components/_base.scss */
+body :before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(/images/bg.jpg) no-repeat left bottom fixed;
+  background-size: cover;
+}
+
+/* line 29, src/sass/components/_base.scss */
+body h1 {
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+/* line 38, src/sass/components/_base.scss */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+/* line 6, src/sass/components/_typography.scss */
+.content {
+  color: white;
+  margin: 30px auto;
+  font-family: "freight-micro-pro", sans-serif;
+  max-width: 900px;
+}
+
+/* line 13, src/sass/components/_typography.scss */
+.content h1 {
+  font: 100 normal 60px/1em "urw-din", sans-serif;
+}
+
+/* line 17, src/sass/components/_typography.scss */
+.content h1.about {
+  font-size: 30px;
+  text-align: center;
+  margin: 2em 0 .7em 0;
+}
+
+/* line 23, src/sass/components/_typography.scss */
+.content h2 {
+  padding-left: .7em;
+  max-width: 500px;
+  font: 900 normal 16px/1.3em "freight-micro-pro", serif;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+/* line 33, src/sass/components/_typography.scss */
+.content p {
+  font: 500 normal 18px/1.3em "freight-micro-pro", serif;
+  letter-spacing: .1em;
+  margin: 0 0 0 .55em;
+}
+
+/* line 38, src/sass/components/_typography.scss */
+.content p.description {
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #ffe678;
+}
+
+/* line 43, src/sass/components/_typography.scss */
+.content p.bio {
+  padding: 0 2em 2em 2em;
+  font-size: 16px;
+  letter-spacing: .14em;
+  font-weight: 300;
+}
+
+/* line 51, src/sass/components/_typography.scss */
+.content .copyright p {
+  font: 300 normal 10px/1em "freight-micro-pro", serif;
+  text-align: center;
+  margin-top: 2em;
+  padding-bottom: 2em;
+}
+
+@media screen and (orientation: portrait) {
+  /* line 62, src/sass/components/_typography.scss */
+  .content h2 {
+    max-width: 100%;
+  }
+  /* line 65, src/sass/components/_typography.scss */
+  .content p {
+    margin-top: 2em;
+    font-size: 21px;
+  }
+}
+
+/* line 73, src/sass/components/_typography.scss */
+#mc_embed_signup {
+  margin-left: .6em;
+}
+
+/* line 75, src/sass/components/_typography.scss */
+#mc_embed_signup h1 {
+  font-size: 30px;
+  text-align: center;
+  margin: 2em 0 .7em 0;
+}
+
+/* line 80, src/sass/components/_typography.scss */
+#mc_embed_signup .mc-field-group input {
+  border-radius: 0px;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  color: white;
+}
+
+/* line 85, src/sass/components/_typography.scss */
+#mc_embed_signup .mc-field-group input:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* line 90, src/sass/components/_typography.scss */
+#mc_embed_signup .center {
+  text-align: center;
+}
+
+/* line 93, src/sass/components/_typography.scss */
+#mc_embed_signup .button {
+  background: rgba(255, 230, 120, 0.9) !important;
+  border-radius: 0px !important;
+  color: black !important;
+  text-transform: uppercase !important;
+  font: 500 normal 16px/2em "freight-micro-pro", serif !important;
+  letter-spacing: .14em;
+}

@@ -1,0 +1,101 @@
+// @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100');
+
+@import url("https://use.typekit.net/pak6xxi.css");
+
+
+.content{
+  color: white;
+  margin: 30px auto;
+  font-family: "freight-micro-pro", sans-serif;
+
+  max-width: 900px;
+
+  h1 {
+
+    // font: 100 normal 60px/1em "Roboto Mono", sans-serif;
+    font: 100 normal 60px/1em "urw-din", sans-serif;
+    &.about {
+      font-size: 30px;
+      text-align: center;
+      margin: 2em 0 .7em 0;
+    }
+  }
+  h2 {
+    padding-left: .7em;
+    max-width: 500px;
+    font: 900 normal 16px/1.3em "freight-micro-pro", serif;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+
+  }
+
+  p {
+    font: 500 normal 18px/1.3em "freight-micro-pro", serif;
+    letter-spacing: .1em;
+    margin: 0 0 0 .55em;
+
+    &.description {
+      margin-top: 3em;
+      padding-top: 1em;
+      border-top: 1px solid rgb(255,230,120);
+    }
+    &.bio {
+      padding: 0 2em 2em 2em;
+      font-size: 16px;
+      letter-spacing: .14em;
+      font-weight: 300;
+    }
+  }
+
+  .copyright p{
+    font: 300 normal 10px/1em "freight-micro-pro", serif;
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .content {
+    // margin: 20px 10px 0 10px;
+    h2 {
+      max-width: 100%;
+    }
+    p {
+      margin-top: 2em;
+      font-size: 21px;
+    }
+  }
+}
+
+
+#mc_embed_signup {
+  margin-left: .6em;
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 2em 0 .7em 0;
+  }
+  .mc-field-group input {
+    border-radius: 0px;
+    border: none;
+    background: rgba(white,0.4);
+    color: white;
+    &:focus {
+      background: rgba(white,0.25);
+
+    }
+  }
+  .center {
+    text-align: center;
+  }
+  .button {
+    background: rgba(255,230,120, 0.9) !important;
+    border-radius: 0px !important;
+    color: black !important;
+    text-transform: uppercase !important;
+    font: 500 normal 16px/2em "freight-micro-pro", serif !important;
+    letter-spacing: .14em;
+  }
+}
