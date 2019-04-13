@@ -7,26 +7,17 @@ a {
   color: inherit;
   &:hover {
     // font-weight: bold;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
   }
 }
 
 html {
   height: 100%;
 }
+
 body {
   margin: 0px !important;
 
-
-  // :before {
-    // content: "";
-    // display: block;
-    // position: fixed;
-    // left: 0;
-    // top: 0;
-    // width: 100%;
-    // height: 100%;
-    // z-index: -10;
   .bg {
     position: fixed;
     width: 100%;
@@ -34,8 +25,16 @@ body {
     height: 100%;
     left: 0;
     top: 0;
-    background: url("/images/bg.jpg") no-repeat left bottom fixed;
     z-index: -10;
+    background: url("/images/bg.jpg") no-repeat left bottom fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .intro {
+    background: url("/images/bg2.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -48,6 +47,15 @@ body {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   }
+
+  .bios {
+    background: url("/images/bg.jpg") no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+  }
 }
 
 
@@ -56,4 +64,70 @@ textarea,
 select,
 button {
 	font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#mc_embed_signup {
+  form {
+    padding: 0 !important;
+    max-width: 700px;
+    margin: 0 auto;
+    div {
+      margin-right: 0 !important;
+    }
+  }
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 2em 0 .7em 0;
+  }
+  .mc-field-group {
+    width: 100% !important;
+    label {
+      font-weight: 200;
+      letter-spacing: .05em;
+    }
+    input {
+      border-radius: 0px;
+      // border: none;
+      border: 1px solid rgba(black,0.2);
+      color: black;
+      &:focus {
+        border-color: rgba(black,1);
+      }
+    }
+  }
+  .center {
+    text-align: center;
+  }
+  .button {
+    margin-top: 2em !important;
+    width: 80% !important;
+    height: auto !important;
+    box-shadow: none !important;
+    background: url("/images/bg2.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-radius: 0px !important;
+    color: white !important;
+    text-transform: uppercase !important;
+    font: 500 normal 18px/1em "freight-micro-pro", serif !important;
+    letter-spacing: .14em;
+    padding: 1em 2em !important;
+
+    &:focus, &:hover {
+      // font-style: italic !important;
+      // font-weight: 500 !important;
+          box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+
+    }
+  }
 }

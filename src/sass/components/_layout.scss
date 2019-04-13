@@ -1,0 +1,91 @@
+.content {
+  // max-width: 900px;
+  section {
+    &:not(.intro) {
+      margin: 2em auto;
+      // max-width: 900px;
+      padding: 30px;
+    }
+    &.description {
+      margin: 3em auto;
+    }
+    &.bios {
+      padding: 15vh 0;
+    }
+  }
+  h1 {
+    padding-bottom: .5em;
+    text-align: center;
+  }
+  h2 {
+  }
+  h3 {
+    font: 300 normal 21px/1.5em "freight-micro-pro", serif;
+    text-align: center;
+    letter-spacing: 0.025em;
+    padding: 2em;
+  }
+
+  .intro {
+    text-align: center;
+    padding: 15vh 0;
+
+    h1, h2 {
+      margin: auto;
+    }
+    h1 {
+      display: inline-block;
+      padding-bottom: .5em;
+    }
+    h2 {
+      display: block;
+    }
+  }
+
+  p {
+    &.description {
+      text-align: justify;
+      margin: 0 auto;
+      padding-top: 1em;
+      // border-top: 1px solid rgb(255,230,120);
+    }
+    &.bio {
+      padding: 0 2em 2em 2em;
+    }
+  }
+  .copyright {
+    text-align: center;
+    margin-top: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+.mw900 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media screen and (orientation: portrait) {
+  .content {
+    section.description {
+      margin: 1.5em auto;
+    }
+    h1 {
+      font-size: 24px !important;
+    }
+    h2 {
+      // font-size: 14px !important;
+      // max-width: 100%;
+    }
+
+    p {
+      &.description {
+        font-size: 16px;
+        text-align: left;
+
+      }
+      margin-top: 2em;
+      font-size: 21px;
+    }
+  }
+}
