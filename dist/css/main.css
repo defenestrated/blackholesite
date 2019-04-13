@@ -164,20 +164,22 @@ textarea:focus {
 /* line 9, src/sass/components/_layout.scss */
 .content section.description {
   margin: 3em auto;
+  padding: 0;
 }
 
-/* line 12, src/sass/components/_layout.scss */
+/* line 13, src/sass/components/_layout.scss */
 .content section.bios {
   padding: 15vh 0;
+  text-align: justify;
 }
 
-/* line 16, src/sass/components/_layout.scss */
+/* line 18, src/sass/components/_layout.scss */
 .content h1 {
   padding-bottom: .5em;
   text-align: center;
 }
 
-/* line 22, src/sass/components/_layout.scss */
+/* line 24, src/sass/components/_layout.scss */
 .content h3 {
   font: 300 normal 21px/1.5em "freight-micro-pro", serif;
   text-align: center;
@@ -185,68 +187,87 @@ textarea:focus {
   padding: 2em;
 }
 
-/* line 29, src/sass/components/_layout.scss */
+/* line 31, src/sass/components/_layout.scss */
 .content .intro {
   text-align: center;
   padding: 15vh 0;
 }
 
-/* line 33, src/sass/components/_layout.scss */
+/* line 35, src/sass/components/_layout.scss */
 .content .intro h1, .content .intro h2 {
   margin: auto;
 }
 
-/* line 36, src/sass/components/_layout.scss */
+/* line 38, src/sass/components/_layout.scss */
 .content .intro h1 {
   display: inline-block;
   padding-bottom: .5em;
 }
 
-/* line 40, src/sass/components/_layout.scss */
+/* line 42, src/sass/components/_layout.scss */
 .content .intro h2 {
   display: block;
 }
 
-/* line 46, src/sass/components/_layout.scss */
+/* line 48, src/sass/components/_layout.scss */
 .content p.description {
   text-align: justify;
   margin: 0 auto;
   padding-top: 1em;
 }
 
-/* line 52, src/sass/components/_layout.scss */
+/* line 54, src/sass/components/_layout.scss */
 .content p.bio {
   padding: 0 2em 2em 2em;
 }
 
-/* line 56, src/sass/components/_layout.scss */
+/* line 58, src/sass/components/_layout.scss */
 .content .copyright {
   text-align: center;
   margin-top: 2em;
   padding-bottom: 2em;
 }
 
-/* line 63, src/sass/components/_layout.scss */
+/* line 65, src/sass/components/_layout.scss */
 .mw900 {
   max-width: 900px;
   margin: 0 auto;
 }
 
 @media screen and (orientation: portrait) {
-  /* line 70, src/sass/components/_layout.scss */
+  /* line 73, src/sass/components/_layout.scss */
   .content section.description {
     margin: 1.5em auto;
   }
-  /* line 73, src/sass/components/_layout.scss */
-  .content h1 {
-    font-size: 24px !important;
+  /* line 76, src/sass/components/_layout.scss */
+  .content section.bios {
+    text-align: left;
+    margin-bottom: 0;
+    background-position: 20% center;
   }
   /* line 81, src/sass/components/_layout.scss */
+  .content section.mailing-list {
+    margin: 0;
+  }
+  /* line 86, src/sass/components/_layout.scss */
+  .content h1 {
+    font-size: 30px !important;
+  }
+  /* line 89, src/sass/components/_layout.scss */
+  .content h2 {
+    font-size: 12px !important;
+  }
+  /* line 94, src/sass/components/_layout.scss */
+  .content h3 {
+    padding: 0;
+    margin: 0 0 1em 0;
+  }
+  /* line 99, src/sass/components/_layout.scss */
   .content p {
     margin-top: 2em;
     font-size: 21px;
   }
-  /* line 82, src/sass/components/_layout.scss */
+  /* line 100, src/sass/components/_layout.scss */
   .content p.description {
     font-size: 16px;
     text-align: left;
@@ -259,43 +280,51 @@ textarea:focus {
   font-family: "freight-micro-pro", sans-serif;
 }
 
-/* line 10, src/sass/components/_typography.scss */
-.content .intro {
+/* line 12, src/sass/components/_typography.scss */
+.content section.intro {
   color: white;
   text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.8);
 }
 
-/* line 15, src/sass/components/_typography.scss */
+/* line 16, src/sass/components/_typography.scss */
+.content section.bios {
+  padding: 10vh 0;
+}
+
+/* line 20, src/sass/components/_typography.scss */
 .content h1 {
   font: 100 normal 60px/1em "urw-din", sans-serif;
 }
 
-/* line 17, src/sass/components/_typography.scss */
+/* line 22, src/sass/components/_typography.scss */
 .content h1.about {
-  font-size: 30px;
+  font-size: 18px !important;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: .075em;
 }
 
-/* line 21, src/sass/components/_typography.scss */
+/* line 29, src/sass/components/_typography.scss */
 .content h2 {
   font: 900 normal 16px/1.3em "freight-micro-pro", serif;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
 
-/* line 28, src/sass/components/_typography.scss */
+/* line 36, src/sass/components/_typography.scss */
 .content p {
   font: 500 normal 18px/1.3em "freight-micro-pro", serif;
   letter-spacing: .1em;
 }
 
-/* line 31, src/sass/components/_typography.scss */
+/* line 39, src/sass/components/_typography.scss */
 .content p.bio {
   font-size: 16px;
   letter-spacing: .14em;
   font-weight: 300;
 }
 
-/* line 38, src/sass/components/_typography.scss */
+/* line 46, src/sass/components/_typography.scss */
 .content .copyright p {
   font: 300 normal 10px/1em "freight-micro-pro", serif;
 }
