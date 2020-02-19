@@ -6,43 +6,104 @@
       // max-width: 900px;
       padding: 30px;
     }
+    &.intro {
+      text-align: center;
+      padding: 15vh 0;
+
+      h1, h2 {
+        margin: auto;
+      }
+      h1 {
+        display: inline-block;
+        padding-bottom: .5em;
+      }
+      h2 {
+        display: block;
+      }
+
+      .laurels {
+        margin-top: 10vh;
+        img {
+          height: 150px;
+          display: inline-block;
+          margin: 0 3vw;
+        }
+
+      }
+    }
+
     &.description {
       margin: 3em auto;
       padding: 0;
     }
+
     &.bios {
       padding: 15vh 0;
       text-align: justify;
+      margin-bottom: 0;
     }
+
+    &.credits {
+      padding: 10vh 6vw;
+      margin: 0;
+      text-align: center;
+      h2 {
+        margin: 2em 0 0 0;
+      }
+      p {
+        margin: 0.25em 0;
+        &.extra {
+          margin: 1em 0 0 0;
+        }
+      }
+      // .creditgrid {
+      // display: grid;
+      // grid-template-columns: 1fr 2fr;
+
+      // .credit-title {
+      // text-align: right;
+      // }
+      // .credit-span {
+      // text-align: center;
+      // grid-column-end: span 2;
+      // }
+
+      // }
+    }
+    &.statement {
+      background: #f4f4f4;
+      color: #4f4f4f;
+      padding: 10vh 6vw;
+    }
+
+    &.contact {
+      #mc_embed_signup {
+        margin-bottom: 5vh;
+      }
+      h4 {
+        padding: 0.25em 0;
+      }
+    }
+
   }
   h1 {
     padding-bottom: .5em;
     text-align: center;
+    &#about {
+      padding-bottom: 10vh;
+    }
   }
   h2 {
   }
   h3 {
-    font: 300 normal 21px/1.5em "freight-micro-pro", serif;
-    text-align: center;
-    letter-spacing: 0.025em;
     padding: 2em;
   }
 
-  .intro {
-    text-align: center;
-    padding: 15vh 0;
-
-    h1, h2 {
-      margin: auto;
-    }
-    h1 {
-      display: inline-block;
-      padding-bottom: .5em;
-    }
-    h2 {
-      display: block;
-    }
+  h4 {
+    padding: 0 0 1em 3vw;
+    margin: 0;
   }
+
 
   p {
     &.description {
@@ -52,13 +113,46 @@
       // border-top: 1px solid rgb(255,230,120);
     }
     &.bio {
-      padding: 0 2em 2em 2em;
+      padding: 0 3vw 3vw 3vw;
     }
   }
   .copyright {
     text-align: center;
     margin-top: 2em;
-    padding-bottom: 2em;
+    padding: 2em 0;
+    background: #f4f4f4;
+  }
+  .biogrid {
+    display: grid;
+    grid-template-areas:
+        "pic1 bio"
+        "pic2 bio"
+        "extras extras";
+    .bio-pic {
+      // align-self: start;
+      #peter {
+        grid-area: pic1;
+      }
+      #chyld {
+        grid-area: pic2
+      }
+      max-width: 30vw;
+      img {
+        width: 100%;
+      }
+    }
+    .bio-text {
+      // align-content: center;
+    }
+    .bio-extras {
+      h4 {
+        text-align: center;
+        padding-left: 0;
+      }
+      margin-top: 5vh;
+      grid-area: extras;
+      text-align: center;
+    }
   }
 }
 
@@ -78,7 +172,7 @@
         margin-bottom: 0;
         background-position: 20% center;
       }
-      &.mailing-list {
+      &.contact {
         margin: 0;
         // padding: 0;
       }

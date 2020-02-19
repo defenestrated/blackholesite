@@ -1,7 +1,7 @@
 /*!
  * project-name v0.0.1
  * A description for your project.
- * (c) 2019 YOUR NAME
+ * (c) 2020 YOUR NAME
  * MIT License
  * http://link-to-your-git-repo.com
  */
@@ -10,6 +10,7 @@
  * @section Base Styles
  */
 @import url("https://use.typekit.net/pak6xxi.css");
+@import url("https://p.typekit.net/p.css?s=1&k=pak6xxi&ht=tk&f=36601.36602.36607.36608.36609.36610&a=10925370&app=typekit&e=css");
 /* line 5, src/sass/components/_base.scss */
 a {
   text-decoration: none;
@@ -147,12 +148,14 @@ textarea:focus {
   font: 500 normal 18px/1em "freight-micro-pro", serif !important;
   letter-spacing: .14em;
   padding: 1em 2em !important;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px;
 }
 
-/* line 126, src/sass/components/_base.scss */
+/* line 127, src/sass/components/_base.scss */
 #mc_embed_signup .button:focus, #mc_embed_signup .button:hover {
-  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
-          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  -webkit-filter: grayscale(90%);
+          filter: grayscale(90%);
+  text-shadow: black 0px 0px 10px;
 }
 
 /* line 4, src/sass/components/_layout.scss */
@@ -162,122 +165,280 @@ textarea:focus {
 }
 
 /* line 9, src/sass/components/_layout.scss */
+.content section.intro {
+  text-align: center;
+  padding: 15vh 0;
+}
+
+/* line 13, src/sass/components/_layout.scss */
+.content section.intro h1, .content section.intro h2 {
+  margin: auto;
+}
+
+/* line 16, src/sass/components/_layout.scss */
+.content section.intro h1 {
+  display: inline-block;
+  padding-bottom: .5em;
+}
+
+/* line 20, src/sass/components/_layout.scss */
+.content section.intro h2 {
+  display: block;
+}
+
+/* line 24, src/sass/components/_layout.scss */
+.content section.intro .laurels {
+  margin-top: 10vh;
+}
+
+/* line 26, src/sass/components/_layout.scss */
+.content section.intro .laurels img {
+  height: 150px;
+  display: inline-block;
+  margin: 0 3vw;
+}
+
+/* line 35, src/sass/components/_layout.scss */
 .content section.description {
   margin: 3em auto;
   padding: 0;
 }
 
-/* line 13, src/sass/components/_layout.scss */
+/* line 40, src/sass/components/_layout.scss */
 .content section.bios {
   padding: 15vh 0;
   text-align: justify;
+  margin-bottom: 0;
 }
 
-/* line 18, src/sass/components/_layout.scss */
+/* line 46, src/sass/components/_layout.scss */
+.content section.credits {
+  padding: 10vh 6vw;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 50, src/sass/components/_layout.scss */
+.content section.credits h2 {
+  margin: 2em 0 0 0;
+}
+
+/* line 53, src/sass/components/_layout.scss */
+.content section.credits p {
+  margin: 0.25em 0;
+}
+
+/* line 55, src/sass/components/_layout.scss */
+.content section.credits p.extra {
+  margin: 1em 0 0 0;
+}
+
+/* line 73, src/sass/components/_layout.scss */
+.content section.statement {
+  background: #f4f4f4;
+  color: #4f4f4f;
+  padding: 10vh 6vw;
+}
+
+/* line 80, src/sass/components/_layout.scss */
+.content section.contact #mc_embed_signup {
+  margin-bottom: 5vh;
+}
+
+/* line 83, src/sass/components/_layout.scss */
+.content section.contact h4 {
+  padding: 0.25em 0;
+}
+
+/* line 89, src/sass/components/_layout.scss */
 .content h1 {
   padding-bottom: .5em;
   text-align: center;
 }
 
-/* line 24, src/sass/components/_layout.scss */
+/* line 92, src/sass/components/_layout.scss */
+.content h1#about {
+  padding-bottom: 10vh;
+}
+
+/* line 98, src/sass/components/_layout.scss */
 .content h3 {
-  font: 300 normal 21px/1.5em "freight-micro-pro", serif;
-  text-align: center;
-  letter-spacing: 0.025em;
   padding: 2em;
 }
 
-/* line 31, src/sass/components/_layout.scss */
-.content .intro {
-  text-align: center;
-  padding: 15vh 0;
+/* line 102, src/sass/components/_layout.scss */
+.content h4 {
+  padding: 0 0 1em 3vw;
+  margin: 0;
 }
 
-/* line 35, src/sass/components/_layout.scss */
-.content .intro h1, .content .intro h2 {
-  margin: auto;
-}
-
-/* line 38, src/sass/components/_layout.scss */
-.content .intro h1 {
-  display: inline-block;
-  padding-bottom: .5em;
-}
-
-/* line 42, src/sass/components/_layout.scss */
-.content .intro h2 {
-  display: block;
-}
-
-/* line 48, src/sass/components/_layout.scss */
+/* line 109, src/sass/components/_layout.scss */
 .content p.description {
   text-align: justify;
   margin: 0 auto;
   padding-top: 1em;
 }
 
-/* line 54, src/sass/components/_layout.scss */
+/* line 115, src/sass/components/_layout.scss */
 .content p.bio {
-  padding: 0 2em 2em 2em;
+  padding: 0 3vw 3vw 3vw;
 }
 
-/* line 58, src/sass/components/_layout.scss */
+/* line 119, src/sass/components/_layout.scss */
 .content .copyright {
   text-align: center;
   margin-top: 2em;
-  padding-bottom: 2em;
+  padding: 2em 0;
+  background: #f4f4f4;
 }
 
-/* line 65, src/sass/components/_layout.scss */
+/* line 125, src/sass/components/_layout.scss */
+.content .biogrid {
+  display: grid;
+  grid-template-areas: "pic1 bio" "pic2 bio" "extras extras";
+}
+
+/* line 131, src/sass/components/_layout.scss */
+.content .biogrid .bio-pic {
+  max-width: 30vw;
+}
+
+/* line 133, src/sass/components/_layout.scss */
+.content .biogrid .bio-pic #peter {
+  grid-area: pic1;
+}
+
+/* line 136, src/sass/components/_layout.scss */
+.content .biogrid .bio-pic #chyld {
+  grid-area: pic2;
+}
+
+/* line 140, src/sass/components/_layout.scss */
+.content .biogrid .bio-pic img {
+  width: 100%;
+}
+
+/* line 147, src/sass/components/_layout.scss */
+.content .biogrid .bio-extras {
+  margin-top: 5vh;
+  grid-area: extras;
+  text-align: center;
+}
+
+/* line 148, src/sass/components/_layout.scss */
+.content .biogrid .bio-extras h4 {
+  text-align: center;
+  padding-left: 0;
+}
+
+/* line 159, src/sass/components/_layout.scss */
 .mw900 {
   max-width: 900px;
   margin: 0 auto;
 }
 
 @media screen and (orientation: portrait) {
-  /* line 73, src/sass/components/_layout.scss */
+  /* line 167, src/sass/components/_layout.scss */
   .content section.description {
     margin: 1.5em auto;
   }
-  /* line 76, src/sass/components/_layout.scss */
+  /* line 170, src/sass/components/_layout.scss */
   .content section.bios {
     text-align: left;
     margin-bottom: 0;
     background-position: 20% center;
   }
-  /* line 81, src/sass/components/_layout.scss */
-  .content section.mailing-list {
+  /* line 175, src/sass/components/_layout.scss */
+  .content section.contact {
     margin: 0;
   }
-  /* line 86, src/sass/components/_layout.scss */
+  /* line 180, src/sass/components/_layout.scss */
   .content h1 {
     font-size: 30px !important;
   }
-  /* line 89, src/sass/components/_layout.scss */
+  /* line 183, src/sass/components/_layout.scss */
   .content h2 {
     font-size: 12px !important;
   }
-  /* line 94, src/sass/components/_layout.scss */
+  /* line 188, src/sass/components/_layout.scss */
   .content h3 {
     padding: 0;
     margin: 0 0 1em 0;
   }
-  /* line 99, src/sass/components/_layout.scss */
+  /* line 193, src/sass/components/_layout.scss */
   .content p {
     margin-top: 2em;
     font-size: 21px;
   }
-  /* line 100, src/sass/components/_layout.scss */
+  /* line 194, src/sass/components/_layout.scss */
   .content p.description {
     font-size: 16px;
     text-align: left;
   }
 }
 
+@font-face {
+  font-family: "urw-din";
+  src: url("https://use.typekit.net/af/570b14/00000000000000003b9b0ee3/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/570b14/00000000000000003b9b0ee3/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/570b14/00000000000000003b9b0ee3/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "urw-din";
+  src: url("https://use.typekit.net/af/3bd84d/00000000000000003b9b0ee4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/3bd84d/00000000000000003b9b0ee4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/3bd84d/00000000000000003b9b0ee4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "urw-din";
+  src: url("https://use.typekit.net/af/c196c0/00000000000000003b9b0ee9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/c196c0/00000000000000003b9b0ee9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/c196c0/00000000000000003b9b0ee9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "urw-din";
+  src: url("https://use.typekit.net/af/359d41/00000000000000003b9b0eea/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/359d41/00000000000000003b9b0eea/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/359d41/00000000000000003b9b0eea/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "urw-din";
+  src: url("https://use.typekit.net/af/756b6a/00000000000000003b9b0eeb/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3") format("woff2"), url("https://use.typekit.net/af/756b6a/00000000000000003b9b0eeb/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3") format("woff"), url("https://use.typekit.net/af/756b6a/00000000000000003b9b0eeb/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i9&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "urw-din";
+  src: url("https://use.typekit.net/af/cbadfd/00000000000000003b9b0eec/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff2"), url("https://use.typekit.net/af/cbadfd/00000000000000003b9b0eec/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("woff"), url("https://use.typekit.net/af/cbadfd/00000000000000003b9b0eec/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3") format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+}
+
+/* line 40, src/sass/components/_extras.scss */
+.tk-freight-micro-pro {
+  font-family: "freight-micro-pro",serif;
+}
+
+/* line 41, src/sass/components/_extras.scss */
+.tk-urw-din {
+  font-family: "urw-din",sans-serif;
+}
+
 /* line 6, src/sass/components/_typography.scss */
 .content {
   color: black;
-  font-family: "freight-micro-pro", sans-serif;
+  font-family: "Freight Micro Pro", "freight-micro-pro", sans-serif;
 }
 
 /* line 12, src/sass/components/_typography.scss */
@@ -291,40 +452,98 @@ textarea:focus {
   padding: 10vh 0;
 }
 
-/* line 20, src/sass/components/_typography.scss */
-.content h1 {
-  font: 100 normal 60px/1em "urw-din", sans-serif;
+/* line 21, src/sass/components/_typography.scss */
+.content section.credits h2 {
+  letter-spacing: .1em;
 }
 
-/* line 22, src/sass/components/_typography.scss */
-.content h1.about {
+/* line 24, src/sass/components/_typography.scss */
+.content section.credits p {
+  font-weight: 300;
+}
+
+/* line 26, src/sass/components/_typography.scss */
+.content section.credits p.extra {
+  font-style: italic;
+}
+
+/* line 33, src/sass/components/_typography.scss */
+.content section.statement p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+/* line 37, src/sass/components/_typography.scss */
+.content section.statement p.signature {
+  text-align: right;
+}
+
+/* line 44, src/sass/components/_typography.scss */
+.content section.contact a {
+  color: #d75700;
+}
+
+/* line 46, src/sass/components/_typography.scss */
+.content section.contact a:hover {
+  color: #666;
+}
+
+/* line 52, src/sass/components/_typography.scss */
+.content section.contact h4 {
+  font: 300 normal 18px/1.5em "Freight Micro Pro", "freight-micro-pro", serif;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+/* line 59, src/sass/components/_typography.scss */
+.content h1 {
+  font: 100 normal 60px/1em "URW DIN", "urw-din", sans-serif;
+}
+
+/* line 61, src/sass/components/_typography.scss */
+.content h1.minor {
   font-size: 18px !important;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: .075em;
 }
 
-/* line 29, src/sass/components/_typography.scss */
+/* line 68, src/sass/components/_typography.scss */
 .content h2 {
-  font: 900 normal 16px/1.3em "freight-micro-pro", serif;
+  font: 900 normal 16px/1.3em "Freight Micro Pro", "freight-micro-pro", serif;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
 
-/* line 36, src/sass/components/_typography.scss */
+/* line 74, src/sass/components/_typography.scss */
+.content h3 {
+  font: 300 normal 21px/1.5em "Freight Micro Pro", "freight-micro-pro", serif;
+  text-align: center;
+  letter-spacing: 0.025em;
+}
+
+/* line 82, src/sass/components/_typography.scss */
+.content h4 {
+  font: 700 normal 18px "URW DIN", "urw-din", sans-serif;
+  letter-spacing: .05em;
+  text-align: left;
+}
+
+/* line 88, src/sass/components/_typography.scss */
 .content p {
-  font: 500 normal 18px/1.3em "freight-micro-pro", serif;
+  font: 500 normal 18px/1.3em "Freight Micro Pro", "freight-micro-pro", serif;
   letter-spacing: .1em;
 }
 
-/* line 39, src/sass/components/_typography.scss */
+/* line 91, src/sass/components/_typography.scss */
 .content p.bio {
   font-size: 16px;
   letter-spacing: .14em;
   font-weight: 300;
 }
 
-/* line 46, src/sass/components/_typography.scss */
+/* line 98, src/sass/components/_typography.scss */
 .content .copyright p {
-  font: 300 normal 10px/1em "freight-micro-pro", serif;
+  font: 300 normal 10px/1em "Freight Micro Pro", "freight-micro-pro", serif;
 }

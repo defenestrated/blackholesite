@@ -122,11 +122,14 @@ textarea:focus {
     font: 500 normal 18px/1em "freight-micro-pro", serif !important;
     letter-spacing: .14em;
     padding: 1em 2em !important;
+      text-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px;
 
     &:focus, &:hover {
       // font-style: italic !important;
       // font-weight: 500 !important;
-          box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+      // box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+      filter: grayscale(90%);
+      text-shadow: black 0px 0px 10px;
 
     }
   }

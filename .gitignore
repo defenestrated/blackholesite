@@ -2,3 +2,5 @@ node_modules
 /.DS_Store
 /src/copy/images/10BLACKHOLEPHOTO-superJumbo-v3.jpg
 /dist/images/10BLACKHOLEPHOTO-superJumbo-v3.jpg
+/src/sass/components/blackholesite-notes.txt
+/src/copy/images/.DS_Store
