@@ -12,6 +12,17 @@
     &.intro {
       color: white;
       text-shadow: 0px 0px 30px rgba(0,0,0,0.8);
+      h4 {
+        font: 300 normal 18px/1.5em "Freight Micro Pro", "freight-micro-pro", serif;
+        text-align: center;
+        letter-spacing: 0.025em;;
+        a {
+          font-weight: 700;
+          &:hover {
+            color: #ccc;
+          }
+        }
+      }
     }
     &.bios {
       padding: 10vh 0;

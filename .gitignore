@@ -1,5 +1,5 @@
 node_modules
-/.DS_Store
+.DS_Store
 /package-lock.json
 /src/copy/images/10BLACKHOLEPHOTO-superJumbo-v3.jpg
 /dist/images/10BLACKHOLEPHOTO-superJumbo-v3.jpg
