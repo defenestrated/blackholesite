@@ -49,11 +49,12 @@ body {
   }
 
   .bios {
-    background: url("/images/bg.jpg") no-repeat left center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    // background: url("/images/bg.jpg") no-repeat left center;
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+    // background-size: cover;
+    background: #222;
     color: white;
   }
 }
