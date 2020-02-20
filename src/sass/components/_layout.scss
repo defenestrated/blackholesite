@@ -68,9 +68,10 @@
         margin: 2em 0 0 0;
       }
       p {
-        margin: 0.25em 0;
+        margin: 0.25em auto;
+        max-width: 800px;
         &.extra {
-          margin: 1em 0 0 0;
+          margin: 1em auto 0 auto;
         }
       }
       // .creditgrid {
@@ -92,6 +93,13 @@
       color: #4f4f4f;
       padding: 10vh 6vw;
       margin: 0;
+      h1 {
+        margin-bottom: 2em;
+      }
+      p {
+        max-width: 800px;
+        margin: auto;
+      }
     }
 
     &.contact {
